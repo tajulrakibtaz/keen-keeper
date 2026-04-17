@@ -26,7 +26,7 @@ const Timeline = () => {
     <div className="max-w-2xl mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">Timeline</h1>
 
-      <div className="flex gap-2 mb-4">
+      <div className="flex flex-col sm:flex-row gap-2 mb-4">
         <select
           value={filter}
           onChange={e => setFilter(e.target.value)}
@@ -47,7 +47,7 @@ const Timeline = () => {
 
       <div className="flex flex-col gap-0">
         {filtered.length === 0 && (
-          <p className="text-gray-400 text-sm text-center py-10">No events yet. Log a check-in from a friend's page!</p>
+          <p className="text-gray-400 text-sm text-center py-10">No events </p>
         )}
         {filtered.map((event) => {
           const config = TYPE_CONFIG[event.type] || { icon: "📌", bg: "bg-gray-100" };

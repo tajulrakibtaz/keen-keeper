@@ -32,7 +32,7 @@ const StatPage = () => {
 
         {data.length === 0 ? (
           <p className="text-center text-gray-400 text-sm py-10">
-            No data yet. Log some check-ins first!
+            No data yet. 
           </p>
         ) : (
           <div className="flex justify-center">
