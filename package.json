@@ -19,6 +19,7 @@
     "react-router-dom": "^7.14.1",
     "react-spinner": "^0.2.7",
     "react-spinners": "^0.17.0",
+    "recharts": "^3.8.1",
     "spinner": "^0.3.4",
     "tailwindcss": "^4.2.2"
   },

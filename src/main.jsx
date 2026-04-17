@@ -9,6 +9,7 @@ import Rootlayout from './layout/rootlayout.jsx'
 import Friend from './componants/friend.jsx'
 import Timeline from './componants/timeline.jsx'
 import Error from './componants/error.jsx'
+import StatPage from './componants/statPage.jsx'
 let router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +25,7 @@ let router = createBrowserRouter([
     },
     {
       path:'/stat',
-      element:<div>State </div>
+      element:<StatPage></StatPage>
     },
   {
     path: '/friend/:id',
