@@ -66,11 +66,11 @@ useEffect(() => {
 
      
 
-     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+     <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl border border-gray-200 py-10 shadow-sm"
+              className="bg-white p-5 rounded-xl border border-gray-200 py-10 shadow-sm"
             >
               <h2 className="text-4xl font-bold text-[#295b4a]">
                 {item.number}
