@@ -70,7 +70,7 @@ useEffect(() => {
           {stats.map((item, index) => (
             <div
               key={index}
-              className="bg-white p-5 rounded-xl border border-gray-200 py-10 shadow-sm"
+              className="bg-white p-5 rounded-xl border border-gray-300 py-10 shadow-sm"
             >
               <h2 className="text-4xl font-bold text-[#295b4a]">
                 {item.number}
