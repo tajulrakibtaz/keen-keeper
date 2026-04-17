@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Friend = () => {
   const { id } = useParams();
@@ -26,21 +28,21 @@ const Friend = () => {
       }),
     };
     localStorage.setItem("timeline", JSON.stringify([newEvent, ...existing]));
-    
+    toast.success(`${type} logged with ${friend.name}!`);
   };
 
   if (!friend) return <div className="p-10 text-center">Loading...</div>;
 
   return (
     <div className="max-w-4xl mx-auto p-6">
+
+      <ToastContainer position="top-right" autoClose={3000} />
+
       <button onClick={() => navigate(-1)} className="text-gray-400 text-sm mb-4 hover:text-gray-600">← Back</button>
 
       <div className="border-2 border-amber-300 rounded-2xl p-6 grid grid-cols-3 gap-4">
 
-   
         <div className="col-span-1 flex flex-col gap-3">
-
-       
           <div className="border border-gray-200 rounded-xl p-4 text-center">
             <img src={friend.picture} className="w-20 h-20 rounded-full mx-auto mb-3" />
             <h2 className="font-bold text-lg">{friend.name}</h2>
@@ -66,7 +68,6 @@ const Friend = () => {
             <p className="text-xs text-gray-400 mt-1">Preferred: {friend.email}</p>
           </div>
 
-         
           <div className="border border-gray-200 rounded-xl overflow-hidden">
             <button className="w-full flex items-center gap-2 px-4 py-3 text-sm text-gray-600 hover:bg-gray-50 border-b border-gray-100">
               🔔 Snooze 2 Weeks
@@ -80,10 +81,7 @@ const Friend = () => {
           </div>
         </div>
 
-      
         <div className="col-span-2 flex flex-col gap-4">
-
-         
           <div className="grid grid-cols-3 gap-3">
             <div className="border border-gray-200 rounded-xl p-4 text-center">
               <p className="text-3xl font-bold">{friend.days_since_contact}</p>
@@ -99,7 +97,6 @@ const Friend = () => {
             </div>
           </div>
 
-         
           <div className="border border-gray-200 rounded-xl p-4 flex justify-between items-center">
             <div>
               <p className="font-semibold text-gray-700">Relationship Goal</p>
@@ -112,7 +109,6 @@ const Friend = () => {
             </button>
           </div>
 
-       
           <div className="border border-gray-200 rounded-xl p-4">
             <p className="font-semibold text-gray-700 mb-3">Quick Check-In</p>
             <div className="grid grid-cols-3 gap-3">
@@ -126,11 +122,10 @@ const Friend = () => {
               </button>
               <button onClick={() => handleCheckin("Video")} className="border border-gray-200 rounded-xl py-4 flex flex-col items-center gap-1 hover:bg-gray-50">
                 <span className="text-xl">🎥</span>
-                <span  className="text-sm text-gray-600">Video</span>
+                <span className="text-sm text-gray-600">Video</span>
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
