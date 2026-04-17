@@ -49,7 +49,7 @@ useEffect(() => {
 
     return (
         <div>
-             <div className="max-w-7xl mx-auto text-center">
+             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-[#1f2937] leading-tight">
           Friends to keep close in your life
         </h1>

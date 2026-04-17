@@ -5,7 +5,7 @@ import { Ri24HoursFill, RiTimeLine } from 'react-icons/ri';
 import { Link, NavLink } from 'react-router';
 const Navbar = () => {
     return (
-        <div className='flex justify-between'>
+        <div className='flex flex-col sm:flex-row sm:justify-between'>
             <div><samp className='text-black'>Keen</samp><samp className='text-emerald-800'>Keeper</samp></div>
             <div className='space-x-2'>
             <button>
