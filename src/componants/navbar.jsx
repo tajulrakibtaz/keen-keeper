@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaHome } from 'react-icons/fa';
-import { Ri24HoursFill } from 'react-icons/ri';
+import { IoMdStats } from 'react-icons/io';
+import { Ri24HoursFill, RiTimeLine } from 'react-icons/ri';
 import { Link, NavLink } from 'react-router';
 const Navbar = () => {
     return (
@@ -23,10 +24,34 @@ const Navbar = () => {
 </NavLink>
             </button>
                 <button>
-           <NavLink to={'/timeline'} className={(prop)=>`${prop.isActive?'bg-green-900 rounded-md p-3  text-amber-50':'rounded-md p-3'}`}>Timeline</NavLink>
+          <NavLink
+  to="/timeline"
+  className={({ isActive }) =>
+    `flex items-center gap-2 ${
+      isActive
+        ? "bg-green-900 rounded-md p-3 text-amber-50"
+        : "rounded-md p-3"
+    }`
+  }
+>
+  <RiTimeLine />
+  <span>Timeline</span>
+</NavLink>
                 </button>
                 <button>
-<NavLink to={'/stat'} className={(prop)=>`${prop.isActive?'bg-green-900 rounded-md p-3 text-amber-50 ':'rounded-md p-3 '}`}>Stat</NavLink>
+<NavLink
+  to="/stat"
+  className={({ isActive }) =>
+    `flex items-center gap-2 ${
+      isActive
+        ? "bg-green-900 rounded-md p-3 text-amber-50"
+        : "rounded-md p-3"
+    }`
+  }
+>
+  <IoMdStats />
+  <span>Stat</span>
+</NavLink>
 
                 </button>
             </div>
