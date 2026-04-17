@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Mitchell",
+    "picture": "https://i.ibb.co/XZfXzt3H/corporate-portrait-proud-with-business-man-office-start-professional-career-as-intern-company-confid.avif",
+    "email": "sarah.mitchell@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met during university orientation. We still catch up about travel, books, and old campus memories.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 2,
+    "name": "David Thompson",
+    "picture": "https://i.ibb.co/q3WW1G6L/images.jpg",
+    "email": "david.thompson@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["work", "mentor"],
+    "bio": "Worked together at my first internship. He often gives me career advice and frontend development tips.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Emily Carter",
+    "picture": "https://i.ibb.co/vCjSKhDw/istockphoto-1587604256-612x612.jpg",
+    "email": "emily.carter@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["gym", "neighbor"],
+    "bio": "Lives nearby and usually joins me for morning walks and gym sessions during weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 4,
+    "name": "Michael Rivera",
+    "picture": "https://i.ibb.co/vCnL9szc/portrait-male-african-american-professional-possibly-business-executive-corporate-ceo-finance-attorn.webp",
+    "email": "michael.rivera@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["school", "football"],
+    "bio": "We played football together in school and still stay connected during major tournaments.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 5,
+    "name": "Olivia Brooks",
+    "picture": "https://i.ibb.co/YBN1bHWY/person-woman-smiling-studio-portrait-1303-2281.avif",
+    "email": "olivia.brooks@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["travel", "photography"],
+    "bio": "Met during a group trip. She enjoys photography and often shares amazing travel stories.",
+    "goal": 12,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 6,
+    "name": "Daniel Kim",
+    "picture": "https://i.ibb.co/sJP0pZqd/a-business-man-stands-against-white-background-with-his-arms-crossed-ai-generative-photo.jpg",
+    "email": "daniel.kim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["gaming", "online friend"],
+    "bio": "We met through online gaming communities and now regularly talk about tech and games.",
+    "goal": 10,
+    "next_due_date": "2026-04-28"
+  },
+  {
+  "id": 7,
+  "name": "Aisha Rahman",
+  "picture": "https://i.ibb.co/PzD3p2gt/portrait-white-man-isolated-53876-40306.avif",
+  "email": "aisha.rahman@gmail.com",
+  "days_since_contact": 6,
+  "status": "on-track",
+  "tags": ["university", "study group"],
+  "bio": "Met in a study group during university exams. We still collaborate on projects and share notes.",
+  "goal": 12,
+  "next_due_date": "2026-04-26"
+},
+{
+  "id": 8,
+  "name": "James Wilson",
+  "picture": "https://i.ibb.co/jvfkg0WT/handsome-stylish-modern-african-american-business-man-entrepreneur-executive-sitting-outside-office.webp",
+  "email": "james.wilson@gmail.com",
+  "days_since_contact": 15,
+  "status": "almost due",
+  "tags": ["work", "startup"],
+  "bio": "Met at a startup event. We discuss product ideas, React projects, and tech trends regularly.",
+  "goal": 14,
+  "next_due_date": "2026-04-21"
+}
+]
+
+
+
+
+
